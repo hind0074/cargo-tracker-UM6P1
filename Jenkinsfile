@@ -4,7 +4,7 @@ pipeline {
     triggers {
         githubPush()   
     }
-
+//test 
     stages {
 
         stage('Clone') { steps { git url: 'https://github.com/hind0074/cargo-tracker-UM6P1.git', branch: 'main' } }
@@ -17,7 +17,7 @@ pipeline {
 
         
     }
-//test echo pas bat
+
     post {
         success {
             echo 'Build et analyse terminés avec succès !'
