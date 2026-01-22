@@ -9,7 +9,7 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git branch: 'develop', url: 'https://github.com/hind0074/cargo-tracker-UM6P1.git'
+                git branch: 'main', url: 'https://github.com/hind0074/cargo-tracker-UM6P1.git'
             }
         }
 
