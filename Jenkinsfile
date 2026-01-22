@@ -17,7 +17,7 @@ pipeline {
 
         
     }
-//test
+//test echo pas bat
     post {
         success {
             echo 'Build et analyse terminés avec succès !'
