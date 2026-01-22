@@ -4,12 +4,16 @@ pipeline {
     triggers {
         githubPush()   
     }
-//test 
+
     stages {
 
         stage('Clone') { steps { git url: 'https://github.com/hind0074/cargo-tracker-UM6P1.git', branch: 'main' } }
 
-       
+        stage('Build & Test with Coverage') {
+            steps {
+                bat 'mvn clean verify'
+            }
+        }
 
         
     }
